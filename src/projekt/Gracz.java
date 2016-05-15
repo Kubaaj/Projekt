@@ -50,7 +50,9 @@ public class Gracz implements Runnable {
     public String getName() {
         return name;
     }
-
+    public int getX() {
+        return x;
+    }
     private int x;
     private int dx = 10;
     private int xDirection;
