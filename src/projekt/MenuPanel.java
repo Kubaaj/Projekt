@@ -63,7 +63,11 @@ public class MenuPanel extends JPanel implements ActionListener{
         emp3.setOpaque(false);
         emp4.setOpaque(false);
         title.setOpaque(false);
-
+        try {
+            Klient klient = new Klient(InetAddress.getLocalHost(),9876, true);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 }
 
     public void paintComponent(Graphics g){
